@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+footer{
+    background-color: #192a56;
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    color: $verylightgray;
+    font-family: 'Work Sans', sans-serif;
+    color: $verylightgray !important;
+    h2{
+        font-size: 400;
+    }
+    a{
+        color: white;
+    }
+    @include breakpoint-down(small){
+        text-align: center;
+    }
+}
+.footer{
+    &__grid{
+        display: grid;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-template-columns: 1fr;
+        gap: 1px;
+        
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__link{
+        display: block;
+        li{
+            list-style-type: none;
+            transition: 0.5s;
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+        a{
+            width: 100%;
+             &:hover{
+                color: $pink;
+            }
+        }
+    }
+    &__icon{
+        padding: 1rem;
+        border-radius: .5rem;
+        font-size: 1.2rem;
+        background-color: rgba($color: #1111, $alpha: 0.5);
+        transition: .5s ease-in-out;
+        margin-top: 1rem;
+        &:hover{
+            background-color: $pink;
+        } 
+    }
+}  

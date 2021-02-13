@@ -1,0 +1,29 @@
+.reviews{
+    color: $darkblue;
+    background-color: $verylightgray;
+
+    &__wrap{
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    &__item{
+        padding: 1.5rem;
+        background: $white;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    &__text{
+        font-size: 1rem;
+    }
+    &__author{
+        width: 100%;
+        height: 2rem;
+        h2{
+            font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
+        background: $pink;
+        }
+    }
+}
